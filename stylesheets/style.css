@@ -1,60 +1,98 @@
-#bigWrapper{
-    margin: 0 1em;
- 
+/* font from Google: http://fonts.googleapis.com/css?family=Italianno */
+/* font: style weight variant !size/line-height !font-family */
+
+/* colors
+ * main #232323, #98cafb
+ * secondary #5894f8, #f9f9f9
+ * */
+@font-face {
+  font-family: 'Italianno';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Italianno'), local('Italianno-Regular'), url(http://fonts.gstatic.com/s/italianno/v6/RzzA8gdr3WCK_nxdg53KGltXRa8TVwTICgirnJhmVJw.woff2) format('woff2'),
+        url(http://fonts.gstatic.com/s/italianno/v6/RzzA8gdr3WCK_nxdg53KGj8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+html{
+  font-size: 100%;
+}
+body{
+  font-family: Verdana, sans-serif;
+  
+}
+p{
+  font-size: 0.875em;
 }
 
-#midColumn{  
-    margin: 0 25%;
-    background-color: #f9f9f9;
+
+li{
+  display: inline-block;
 }
-#leftColumn{
-    margin: 0 75% 0 0;
+ul.hGalleryList, ul.hNavList{
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+}
+figure{
+  margin: 1em;
+  margin: 1rem;
+  width: 200px;
+
+  display: inline-block;
 }
 
-footer{
-    margin: 5em;
+
+h1{
+  font-family: Italianno, cursive;
+  font-size: 3em;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px #666666;
+  color: #232323;
 }
 
 header{
-    background-color: #98cafb;
-    color: #232323;
-    padding: 1em;
-    height: 4em;
+  background-color: #98cafb;
+  text-align: center;
+  padding: 0 25%;
 }
-h2{
-    color: #98cafb;
+header nav{
+  background-color: #232323;
+  
 }
-
-#siteLogo,#mainTitle,#subTitle#mainNavBar{
-    float: left;
-    color: #5894f8;
+#mainTitle, #subTitle{
+  float: left;
 }
-.hNavList{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-#mainNavBar li{
-    display: inline;
-    
-}
-body{
-    font-family: sans-serif;
+header li, header a{
+  color: #5894f8;
+  background-color: #555;
+  border: 5px solid #232323;
 }
 
-ul{
-    list-style-type: none;
-    
+h2, figcaption{
+  font-family: "Segoe Script", cursive;
+  font-weight: normal;
+  color: #5894f8;
+ 
+}
+div.galleryRows{
+  text-align: center;
+}
+/*
+figcaption{
+  font-family: "Segoe Script", cursive;
+}
+*/
+
+#bigWrapper{
+  margin: 0 1em;
 }
 
-.galleryRows li,figure{
-    display: inline;
-    float: left;
-    padding: 0;
-    width: 210;
+#leftColumn{
+  margin-right: 75%;
+  position: fixed;
+  left: 1em;
+  top: 1em;
 }
 
-.galleryRows{
-    float: left;
-    padding: 0;
+#midColumn{
+  margin: 0 25%;
 }
