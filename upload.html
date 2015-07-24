@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Upload - ThingsIDo</title>
+    <meta charset="utf-8">
+</head>
+
+<!-- The point of this page is to be a private way for me to upload projects to the page, instead of writing html manually
+     for every new project. Only I will have access to this page. It will require quite a lot of logic and programming to work as intended, and probably will
+     not be finished in the course.-->
+
+<body>
+    <div id="bigWrapper">
+        <!-- Page header with logo, title and navigation bar -->
+        <header>
+            <img id="siteLogo" src="general_imgs/logo.png" alt="site logo" height="75" width="450"/>
+            <h1 id="mainTitle">ThingsIDo</h1>
+            <h2 id="subTitle">a personal portfolio of Oliver Stein</h2>
+            <nav id="mainNavBar">
+                <ul class="hNavList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="musicprojs.html">Music projects</a></li>
+                    <li><a href="photos.html">Photos</a></li>
+                    <li><a href="paintings.html">Paintings</a></li>
+                    <li><a href="buildprojs.html">Build projects</a></li>
+                    <li><a href="digitalprojs.html">Digital projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+
+    <!-- middle column, contains data about page and form for uploading projects -->
+    <div class="column" id="midColumn">
+        <section id="dataSection">
+            <h2>Site data</h2>
+            <table>
+                <caption>Various statistics about the data of the different project categories (placeholder data currently)</caption>
+                
+                <col span="1" class="categoryName">
+                <colgroup id="data">
+                    <col span="1" class="numOfProjs">
+                    <col span="1" class="dataSize">
+                    <col span="1" class="latestProj">
+                    <col span="1" class="totalVisits">
+                </colgroup>
+                
+                <thead>
+                    <tr>
+                        <!-- | inserted at end to clarify header ends-->
+                        <th scope="col">category |</th>
+                        <th scope="col"># of projects |</th>
+                        <th scope="col">total data size (MB) |</th>
+                        <th scope="col">latest project |</th>
+                        <th scope="col"># of total visits |</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <th scope="row">music</th>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>empty</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">photos</th>
+                        <td>5</td>
+                        <td>5,37</td>
+                        <td>Foo Fighters Gothenburg 2015</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">paintings</th>
+                        <td>5</td>
+                        <td>1,05</td>
+                        <td>Animal eye - ink</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">build projects</th>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>empty</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">digital projects</th>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>empty</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>              
+                
+                <tfoot>
+                    <tr>
+                        <th scope="row">summary</th>
+                        <td>10</td>
+                        <td>6,42</td>
+                        <td>Foo Fighters Gothenburg 2015</td>
+                        <td>7</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        
+        
+        
+        
+        <section id="uploadSection">
+            <h2>Upload project</h2>
+            <form action="somescript.php" method="POST" enctype="multipart/form-data">
+                
+                <fieldset>
+                    <legend>General info</legend>
+                    <p>
+                        Project type:<br/>
+                        <label><input type="radio" name="projType" value="music" checked>music</label>
+                        <label><input type="radio" name="projType" value="painting" >painting</label>
+                        <label><input type="radio" name="projType" value="photo" >photo</label>
+                        <label><input type="radio" name="projType" value="buildProj" >build project</label>
+                        <label><input type="radio" name="projType" value="digitalProj" >digital project</label>
+                    </p>
+                    <p>
+                        <label>Title:<br/>
+                        <input name="projTitle" type="text" maxlength="50"></label>
+                    </p>
+                    <p>
+                        <label>Description:<br/>
+                        <textarea name="description"></textarea></label>
+                    </p>
+                </fieldset>
+                <!-- Only the fieldset for selected project type should appear in the end result, probably with help of scripting.
+                     Asterisks indicate inputs which should only be visible depending on previous input states, again probably needs scripting.
+                      -->
+                
+                <fieldset id="musicProj">
+                    <legend>Music project</legend>
+                    <p>
+                        Album type:<br/>
+                        <label><input checked type="radio" name="albumType" value="single">single</label>
+                        <label><input type="radio" name="albumType" value="album">album</label>
+                    </p>
+                    <p>
+                        <label>Song name(s): <i>(separate by ;)</i><br/>
+                        <input type="text" name="songNames"></label><br/>
+                    </p>
+                    <p>
+                        <label>Audio files:<br/>
+                        <input type="file" name="audioFile"></label>
+                    </p>
+                </fieldset>
+                
+                <fieldset id="photoProj">
+                    <legend>Photo project</legend>
+                    <p>
+                        Gallery type:<br/>
+                        <label><input checked type="radio" name="galleryType" value="single">single</label>
+                        <label><input type="radio" name="galleryType" value="album">album</label>
+                    </p>
+                    <p>
+                        <label>Alt text (general for album):<br/>
+                        <input type="text" name="altText"></label>
+                    </p>
+                    <p>
+                        <label>Photos:<br/>
+                        <input type="file" name="photoFile"></label>
+                    </p>
+                </fieldset>
+                
+                <fieldset id="paintingProj">
+                    <legend>Painting project</legend>
+                    <p>
+                        <label>Medium:<br/>
+                            <select name="medium" size="5" multiple>
+                                <optgroup label="painting">
+                                    <option>Aquarelle</option>
+                                    <option>Acrylics</option>
+                                    <option>Pencils</option>
+                                    <option>Ink</option>
+                                    <option>Charcoal</option>
+                                    <option>Digital</option>
+                                </optgroup>
+                                <optgroup label="material">
+                                    <option>Canvas</option>
+                                    <option>Paper</option>
+                                </optgroup>
+                            </select>
+                        </label>
+                    </p>
+                    <p>
+                        <label>Alt text:<br/>
+                        <input type="text" name="altText"></label>
+                    </p>
+                    <p>
+                        <label>Image:<br/>
+                        <input type="file" name="paintingImage"></label>
+                    </p>
+                </fieldset>
+                
+                <fieldset id="buildProj">
+                    <legend>Build project</legend>
+                    <p>
+                        <label>Full description<br/>
+                        <textarea name="fullDescription"></textarea></label>
+                    </p>
+                    <p>
+                        <label>Photos:<br/>
+                        <input type="file" name="photoFile"></label>
+                    </p>
+                </fieldset>
+                
+                <fieldset id="digitalProj">
+                    <legend>Build project</legend>
+                    <p>
+                        <label>Full description<br/>
+                        <textarea name="fullDescription"></textarea></label>
+                    </p>
+                    <p>
+                        <label>Photos:<br/>
+                        <input type="file" name="photoFile"></label>
+                    </p>
+                </fieldset>
+                
+            </form>    
+        </section>
+    </div>
+    
+    
+    <!-- Page footer -->
+    <footer>
+        <small>&copy; 2015 Oliver Stein. All rights reserved.</small>
+    </footer>
+
+</body>
+</html>
