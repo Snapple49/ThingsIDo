@@ -4,6 +4,8 @@
 <head>
     <title>Foo Fighters Gothenburg 15 - ThingsIDo</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/style.css" />
+
 </head>
 
 <body>
@@ -13,17 +15,19 @@
             <img id="siteLogo" src="../../general_imgs/logo.png" alt="site logo" height="75" width="450"/>
             <h1 id="mainTitle">ThingsIDo</h1>
             <h2 id="subTitle">a personal portfolio of Oliver Stein</h2>
-            <nav id="mainNavBar">
-                <ul class="hNavList">
-                    <li><a href="../../index.html">Home</a></li>
-                    <li><a href="../../musicprojs.html">Music projects</a></li>
-                    <li><a href="../../photos.html">Photos</a></li>
-                    <li><a href="../../paintings.html">Paintings</a></li>
-                    <li><a href="../../buildprojs.html">Build projects</a></li>
-                    <li><a href="../../digitalprojs.html">Digital projects</a></li>
-                    <li><a href="../../about.html">About</a></li>
-                </ul>
-            </nav>
+            <div id="navContainer">
+                <nav id="mainNavBar">
+                    <ul class="hNavList">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../../musicprojs.html">Music projects</a></li>
+                        <li><a href="../../photos.html">Photos</a></li>
+                        <li><a href="../../paintings.html">Paintings</a></li>
+                        <li><a href="../../buildprojs.html">Build projects</a></li>
+                        <li><a href="../../digitalprojs.html">Digital projects</a></li>
+                        <li><a href="../../about.html">About</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         
         <!-- Left quarter column, contains internal navigation for category -->
@@ -96,7 +100,9 @@
     
         <!-- Page footer -->
         <footer>
-            <small>&copy; 2015 Oliver Stein. All rights reserved.</small>
+            <div id="footerContent">
+                <small>&copy; 2015 Oliver Stein. All rights reserved.</small>
+            </div>
         </footer>
     </div>
 </body>

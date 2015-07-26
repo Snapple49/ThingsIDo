@@ -4,6 +4,7 @@
 <head>
     <title>Upload - ThingsIDo</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
 </head>
 
 <!-- The point of this page is to be a private way for me to upload projects to the page, instead of writing html manually
@@ -17,17 +18,19 @@
             <img id="siteLogo" src="general_imgs/logo.png" alt="site logo" height="75" width="450"/>
             <h1 id="mainTitle">ThingsIDo</h1>
             <h2 id="subTitle">a personal portfolio of Oliver Stein</h2>
-            <nav id="mainNavBar">
-                <ul class="hNavList">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="musicprojs.html">Music projects</a></li>
-                    <li><a href="photos.html">Photos</a></li>
-                    <li><a href="paintings.html">Paintings</a></li>
-                    <li><a href="buildprojs.html">Build projects</a></li>
-                    <li><a href="digitalprojs.html">Digital projects</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </nav>
+            <div id="navContainer">
+                <nav id="mainNavBar">
+                    <ul class="hNavList">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="musicprojs.html">Music projects</a></li>
+                        <li><a href="photos.html">Photos</a></li>
+                        <li><a href="paintings.html">Paintings</a></li>
+                        <li><a href="buildprojs.html">Build projects</a></li>
+                        <li><a href="digitalprojs.html">Digital projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
     </div>
 
@@ -59,35 +62,35 @@
                 </thead>
                 
                 <tbody>
-                    <tr>
+                    <tr class="odd">
                         <th scope="row">music</th>
                         <td>0</td>
                         <td>0</td>
                         <td>empty</td>
                         <td>0</td>
                     </tr>
-                    <tr>
+                    <tr class="even">
                         <th scope="row">photos</th>
                         <td>5</td>
                         <td>5,37</td>
                         <td>Foo Fighters Gothenburg 2015</td>
                         <td>4</td>
                     </tr>
-                    <tr>
+                    <tr class="odd">
                         <th scope="row">paintings</th>
                         <td>5</td>
                         <td>1,05</td>
                         <td>Animal eye - ink</td>
                         <td>3</td>
                     </tr>
-                    <tr>
+                    <tr class="even">
                         <th scope="row">build projects</th>
                         <td>0</td>
                         <td>0</td>
                         <td>empty</td>
                         <td>0</td>
                     </tr>
-                    <tr>
+                    <tr class=" odd">
                         <th scope="row">digital projects</th>
                         <td>0</td>
                         <td>0</td>
@@ -97,7 +100,7 @@
                 </tbody>              
                 
                 <tfoot>
-                    <tr>
+                    <tr class="even">
                         <th scope="row">summary</th>
                         <td>10</td>
                         <td>6,42</td>
@@ -233,7 +236,9 @@
     
     <!-- Page footer -->
     <footer>
-        <small>&copy; 2015 Oliver Stein. All rights reserved.</small>
+        <div id="footerContent">
+            <small>&copy; 2015 Oliver Stein. All rights reserved.</small>
+        </div>
     </footer>
 
 </body>

@@ -1,18 +1,22 @@
 ﻿<!doctype html>
-<!-- Declares what document type this will be, "!doctype html" being HTML5.
+
+<html>
+<head>
+    <!-- Declares what document type this will be, "!doctype html" being HTML5.
      I will be using HTML5 as I generally like to use the latest versions and I also make use of some of the new features in HTML5 like sections, header and footer, and also some
      of the attributes and logic. I would argue it makes more semantic sense than older versions on a lot of the elements and attributes, there are more specific elements to mark
      up your text with. Since it's also a standard now, I don't see why I shouldn't use it, even though there might be a small portion of potential users that might not use browsers
      that support HTML5 fully. Some of the new features in HTML5 will still be interpreted as a more generic version in older standards anyway, like the new input types in forms.
      These default to the text input if the browser doesn't support the new types, so this should not be much of a problem. -->
 
-<html lang="en">
-<head>
     <title>ThingsIDo</title>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
 
 </head>
 <body>
+    <div id="bg">
+    </div>
     <div id="bigWrapper">
         
         <!-- Page header with logo, title and navigation bar -->
@@ -20,17 +24,19 @@
             <img id="siteLogo" src="general_imgs/logo.png" alt="site logo" height="75" width="450"/>
             <h1 id="mainTitle">ThingsIDo</h1>
             <h2 id="subTitle">a personal portfolio of Oliver Stein</h2>
-            <nav id="mainNavBar">
-                <ul class="hNavList">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="musicprojs.html">Music projects</a></li>
-                    <li><a href="photos.html">Photos</a></li>
-                    <li><a href="paintings.html">Paintings</a></li>
-                    <li><a href="buildprojs.html">Build projects</a></li>
-                    <li><a href="digitalprojs.html">Digital projects</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </nav>
+            <div id="navContainer">
+                <nav id="mainNavBar">
+                    <ul class="hNavList">
+                        <li><a href="index.html"><em class="selected">Home</em></a></li>
+                        <li><a href="musicprojs.html">Music projects</a></li>
+                        <li><a href="photos.html">Photos</a></li>
+                        <li><a href="paintings.html">Paintings</a></li>
+                        <li><a href="buildprojs.html">Build projects</a></li>
+                        <li><a href="digitalprojs.html">Digital projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         
         <!-- wrapper för mittkolumnen av sidan -->
@@ -38,6 +44,7 @@
             
             <section class="columnSection" id="welcomeSection">
                 <h2>Welcome to my site!</h2>
+                <p><i>Hi!</i></p>
                 <p>
                 This is a personal portfolio of sorts, where I will post and talk about projects of all
                 kinds that I have done or that I'm currently working with. I like to dabble in a lot of things
@@ -57,37 +64,107 @@
                 
                 <div class="galleryRows" id="firstRow">
                     <ul class="hGalleryList">
-                        <li><figure>
+                        <li><figure class="galleryItem">
                         <figcaption>Foo Fighters Gothenburg 2015</figcaption>
                             <a href="photoalbums/fooGothenburg15/fooGothenburg15.html">
                                 <img src="photoalbums/fooGothenburg15/foo01preview.jpg"
                                      alt="a view from the foo fighters concert in gothenburg 2015, taken from the audience"
                                      width="200" height="113"/></a>
                         </figure></li>
-                        <li><figure>
+                        <li><figure class="galleryItem">
                         <figcaption>Animal eye - ink</figcaption>
                             <a href="paintings/inkEye/inkEye.html">
                                 <img src="paintings/inkEye/inkEyepreview.jpg"
                                      alt="a drawing of an animal eye done in ink"
                                      width="200" height="150"/></a>
                         </figure></li>
-                        <li>item 3</li>
+                        <li>
+                            <figure class="galleryItem">
+                                
+                                <a href="nyi.html">
+                                    <img src="general_imgs/placeholderItem.png"
+                                         alt="placeholder image, 200x150"
+                                         width="200" height="150" />
+                                </a>
+                                <figcaption>item 3</figcaption>
+                            </figure>
+                        </li>
                     </ul>
                 </div>
                 
                 <div class="galleryRows" id="secondRow">
                     <ul class="hGalleryList">
-                        <li>item 4</li>
-                        <li>item 5</li>
-                        <li>item 6</li>
+                        <li>
+                            <figure class="galleryItem">
+
+                                <a href="nyi.html">
+                                    <img src="general_imgs/placeholderItem.png"
+                                         alt="placeholder image, 200x150"
+                                         width="200" height="150" />
+                                </a>
+                                <figcaption>item 4</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="galleryItem">
+
+                                <a href="nyi.html">
+                                    <img src="general_imgs/placeholderItem.png"
+                                         alt="placeholder image, 200x150"
+                                         width="200" height="150" />
+                                </a>
+                                <figcaption>item 5</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="galleryItem">
+
+                                <a href="nyi.html">
+                                    <img src="general_imgs/placeholderItem.png"
+                                         alt="placeholder image, 200x150"
+                                         width="200" height="150" />
+                                </a>
+                                <figcaption>item 6</figcaption>
+                            </figure>
+                        </li>
                     </ul>
                 </div>
                 
                 <div class="galleryRows" id="thirdRow">
                     <ul class="hGalleryList">
-                        <li>item 7</li>
-                        <li>item 8</li>
-                        <li>item 9</li>
+                        <li>
+                            <figure class="galleryItem">
+
+                                <a href="nyi.html">
+                                    <img src="general_imgs/placeholderItem.png"
+                                         alt="placeholder image, 200x150"
+                                         width="200" height="150" />
+                                </a>
+                                <figcaption>item 7</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="galleryItem">
+
+                                <a href="nyi.html">
+                                    <img src="general_imgs/placeholderItem.png"
+                                         alt="placeholder image, 200x150"
+                                         width="200" height="150" />
+                                </a>
+                                <figcaption>item 8</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="galleryItem">
+
+                                <a href="nyi.html">
+                                    <img src="general_imgs/placeholderItem.png"
+                                         alt="placeholder image, 200x150"
+                                         width="200" height="150" />
+                                </a>
+                                <figcaption>item 9</figcaption>
+                            </figure>
+                        </li>
                     </ul>
                 </div>
                 
@@ -98,7 +175,9 @@
         
         <!-- Page footer -->
         <footer>
-            <small>&copy; 2015 Oliver Stein. All rights reserved.</small>
+            <div id="footerContent">
+                <small>&copy; 2015 Oliver Stein. All rights reserved.</small>
+            </div>
         </footer>
     
     </div>

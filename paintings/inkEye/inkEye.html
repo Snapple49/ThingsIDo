@@ -4,6 +4,7 @@
 <head>
     <title>Animal eye - ink - ThingsIDo</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/style.css" />
 </head>
 
 <body>
@@ -13,25 +14,28 @@
             <img id="siteLogo" src="../../general_imgs/logo.png" alt="site logo" height="75" width="450"/>
             <h1 id="mainTitle">ThingsIDo</h1>
             <h2 id="subTitle">a personal portfolio of Oliver Stein</h2>
-            <nav id="mainNavBar">
-                <ul class="hNavList">
-                    <li><a href="../../index.html">Home</a></li>
-                    <li><a href="../../musicprojs.html">Music projects</a></li>
-                    <li><a href="../../photos.html">Photos</a></li>
-                    <li><a href="../../paintings.html">Paintings</a></li>
-                    <li><a href="../../buildprojs.html">Build projects</a></li>
-                    <li><a href="../../digitalprojs.html">Digital projects</a></li>
-                    <li><a href="../../about.html">About</a></li>
-                </ul>
-            </nav>
+            <div id="navContainer">
+                <nav id="mainNavBar">
+                    <ul class="hNavList">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../../musicprojs.html">Music projects</a></li>
+                        <li><a href="../../photos.html">Photos</a></li>
+                        <li><a href="../../paintings.html">Paintings</a></li>
+                        <li><a href="../../buildprojs.html">Build projects</a></li>
+                        <li><a href="../../digitalprojs.html">Digital projects</a></li>
+                        <li><a href="../../about.html">About</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         
         <!-- Left quarter column, contains internal navigation for category -->
         <div class="column" id="leftColumn">
             <section id="internalNavigation">
-                <h2>Paintings</h2>
+                <h2>Paintings and drawings</h2>
+                <hr />
                 <nav>
-                    <ul>
+                    <ul class="vNavList">
                         <li><a href="../../paintings/inkEye/inkEye.html">Animal eye - ink</a></li>
                         <li><a href="../../nyi.html">Tribal wolf pickguard project</a></li>
                         <li><a href="../../nyi.html">Howling wolf cliff - acrylic</a></li>
@@ -42,19 +46,6 @@
             </section>
         </div>
         
-        <!-- Mid half column, contains category information and gridlist of all projects -->
-        <div class="column" id="midColumn">
-            <h2>Animal eye - ink</h2>
-            <p>
-                <a href="inkEye.jpg"><img src="inkEyemarked.jpg" alt="ink drawing of an animal eye" width="700" height="525"/></a><br/>
-                
-                <i>Mediums: <span class="medium">ink</span>, <span class="medium">paper</span></i><br/>
-                
-                This is just a quick doodle I did, I easily get distracted while studying... I just wanted to draw something
-                and it ended up being some kind of animal eye. It's done in ink on page 7 of my math exercise paper.
-                
-            </p>
-        </div>
         
         <!-- Right column, contains latest project in all categories -->
         <div class="column" id="rightColumn">
@@ -77,9 +68,25 @@
             </section>      
         </div>
     
+        <!-- Mid half column, contains category information and gridlist of all projects -->
+        <div class="column" id="midColumn">
+            <h2>Animal eye - ink</h2>
+            <p>
+                <a href="inkEye.jpg"><img class="largeImage" src="inkEyemarked.jpg" alt="ink drawing of an animal eye" width="700" height="525"/></a><br/>
+                
+                <i>Mediums: <span class="medium">ink</span>, <span class="medium">paper</span></i><br/>
+                
+                This is just a quick doodle I did, I easily get distracted while studying... I just wanted to draw something
+                and it ended up being some kind of animal eye. It's done in ink on page 7 of my math exercise paper.
+                
+            </p>
+        </div>
+
         <!-- Page footer -->
         <footer>
-            <small>&copy; 2015 Oliver Stein. All rights reserved.</small>
+            <div id="footerContent">
+                <small>&copy; 2015 Oliver Stein. All rights reserved.</small>
+            </div>
         </footer>
     </div>
 </body>
