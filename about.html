@@ -13,8 +13,10 @@
         <!-- Page header with logo, title and navigation bar -->
         <header>
             <img id="siteLogo" src="general_imgs/logo.png" alt="site logo" height="75" width="450"/>
-            <h1 id="mainTitle">ThingsIDo</h1>
-            <h2 id="subTitle">a personal portfolio of Oliver Stein</h2>
+            <hgroup id="titleGroup">
+                <h1 id="mainTitle">ThingsIDo</h1>
+                <h2 id="subTitle">a personal portfolio<br /> of Oliver Stein</h2>
+            </hgroup>
             <div id="navContainer">
                 <nav id="mainNavBar">
                     <ul class="hNavList">
@@ -30,14 +32,13 @@
             </div>
         </header>
         
-        <!-- Right column, contains latest project in all categories -->
-        <div class="column" id="rightColumn">
+        <!-- Left column, contains latest project in all categories -->
+        <div class="column" id="leftColumn">
             <section id="latestProjects">
-                <h2>
-                    Latest projects
-                </h2>
+                <h2>Latest projects</h2>
+                <hr />
                 <nav>
-                    <dl id="LatestProjList">
+                    <dl class="vNavList">
                         <dt>Music</dt>
                         <dd><a href="nyi.html">latest project</a></dd>
                         <dt>Photos</dt>
@@ -51,10 +52,8 @@
                     </dl>
                 </nav>
             </section>
-
-
-
         </div>
+        
 
         <!-- Mid half column, contains main content -->
         <div class="column" id="midColumn">
@@ -68,12 +67,11 @@
                 </figure>
                 <p id="aboutMe">So my name is Oliver Stein. Currently, I'm a student of Information Tehcnology Engineering at Uppsala University, Sweden, with 3 more years of studies. I enjoy technological
                 stuff and gadgets, but I also love design, art and nature, hence why I dabble in a bit of everything. I love animals and I enjoy outdoor activities
-                like hikes, fishing, camping, while I also like spending hours in front of my computer doing useless stuff like games or surfing the web. When I have
+                like hikes, fishing, camping, while I also like spending hours in front of my computer doing "useless stuff" like games or surfing the web. When I have
                 time, usually in the summer, I try to do as many projects as I can like building instruments or painting, photographing or recording music. And now
-                I'm managing this website. I do get up to a lot of things! I actively try to increase efficiency by creating multiple copies of myself, as seen by the photos.
+                I'm managing this website. I do get up to a lot of things! I actively try to increase efficiency by creating multiple copies of myself, as seen on some of these photos.
                 It's about the only way I can think of to have time to do all these things!</p>
                 
-                <!-- images will be better placed with css -->
 
                 <figure class="aboutImage" id="me2">
                     <img src="general_imgs/me2.jpg" alt="picture with 3 copies of myself, playing different instruments" width="500" height="281" />

@@ -48,17 +48,23 @@ img {
 hr {
     margin: 2em;
     color: #232323;
-    box-shadow: #c8c8c8 2px 2px 3px;
 }
 address {
     margin: 0 3em;
+}
+figcaption {
+    margin-top: 0.5em;
+}
+.galleryItem figcaption {
+    font-style: italic;
+    font-weight: bold;
+    color: #5894f8;
 }
 header{
   background-color: #98cafb;
   text-align: center;
   box-shadow: 0 0 8px #232323;
   height: auto;
-  /*padding: 0 25%;*/
 }
 footer {
     background-color: #232323;
@@ -72,13 +78,6 @@ footer {
   display: inline;
 }
 
-figure{
-  margin: 1em;
-  margin: 1rem;
-  width: 200px;
-  border: red 1px solid;
-  display: inline-block;
-}
 ul.hGalleryList, ul.hNavList{
   list-style: none;
   padding: 0;
@@ -91,9 +90,10 @@ ul.hGalleryList, ul.hNavList{
     margin: 3em;
 }
 .galleryItem {
+    display: inline-block;
     background-color: #c8c8c8;
     width: 220px;
-    height: 220px;
+    height: 200px;
     padding: 0.4em;
     box-shadow: 3px 3px 4px #666666;
     border-radius: 5px;
@@ -103,6 +103,8 @@ ul.hGalleryList, ul.hNavList{
     border: solid 3px #5894f8;
     border: outset 3px #5894f8;
 }
+
+
 .vNavList {
     font-style: italic;
     margin: 2em;
@@ -121,24 +123,16 @@ dt {
 }
 
 h1{
-  font-family: Italianno, cursive;
-  font-size: 3em;
-  font-size: 3rem;
-  text-shadow: 2px 2px 4px #666666;
-  color: #232323;
+  
 }
 
 header nav{
   background-color: #232323;
-  align-content: center;
   margin: 0 25%;
   font-variant: small-caps;
 }
 header a:hover {
     background-color: rgba(200, 200, 200, 0.4);
-}
-#mainTitle, #subTitle{
-  float: left;
 }
 header li, header a{
   color: #5894f8;
@@ -148,19 +142,15 @@ header li, header a{
 }
 
 h2{
-  font-family: "Segoe Script", cursive;
-  font-weight: normal;
   color: #5894f8;
-  font-size: 2em;
- 
+  font: normal 2em "Segoe Script", cursive;
+}
+
+dd {
+    text-indent: -1em;
 }
 
 
-
-.galleryRows{
-  text-align: center;
-  margin: 0 3em;
-}
 
 .aboutImage {
     width: auto;
@@ -188,6 +178,45 @@ h2{
     max-width: 90%;
     width:auto;
     height:auto;
+    padding-top: 1em;
+}
+
+#titleGroup {
+    width: 40em;
+    text-align: center;
+    margin: 0 auto 1em auto;
+    line-height: 0.5em;
+    border-bottom: solid 3px #232323;
+    background-image: linear-gradient(to left, rgba(35, 35, 35, 0.9) 30%, transparent);
+    border-radius: 0 20px 60px 0;
+    box-shadow: 6px -2px 5px #f4f4f4;
+    
+
+}
+#mainTitle, #subTitle{
+    
+  display: inline-block;
+  margin: 0.3em 1em;
+  text-align: center;
+}
+#mainTitle {
+  font-family: Italianno, cursive;
+  font-size: 3em;
+  color: #232323;
+
+}
+#subTitle {
+    font-size: 1.4em;
+    line-height: 1em;
+    margin-top: 1em;
+}
+#siteLogo {
+    position:absolute;
+    left: 0;
+    top: 0;
+    max-width: 25%;
+    width: auto;
+    height: auto;
 }
 
 #bigWrapper{
@@ -210,20 +239,13 @@ h2{
     box-shadow: 0 0 5px #232323;
     height: 20rem;
 }
-#rightColumn, #leftColumn{
-  border: red 1px solid;
-  width: 23%;
-  height: 80%;
+#leftColumn{
+  width: 24%;
+  height: auto;
   position: fixed;
-  top: 10em;
 }
-#rightColumn {
-    right: 0;
-}
-#leftColumn {
-    left: 0;
-}
-#leftColumn a, #leftColumn h2, #rightColumn a, #rightColumn h2{
+
+#leftColumn a, #leftColumn h2{
   font-family: Verdana, sans-serif;
   color: #232323;
  }
@@ -244,7 +266,7 @@ h2{
   box-shadow: 0 0 8px #232323;
   border-radius: 5px;
   min-width: 740px;
-  border: red 1px solid;
+  min-height: 800px;
 }
 
 #contactMe {
@@ -260,6 +282,7 @@ h2{
 }
 
 #navContainer {
+    clear: both;
     background-color: #232323;
 }
 
@@ -280,9 +303,7 @@ h2{
 #me3 {
     float: left;
 }
-#aboutMe p{
-    font-size: 1rem;
-}
+
 
 
 /* table specific styling */

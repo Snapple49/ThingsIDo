@@ -13,8 +13,10 @@
         <!-- Page header with logo, title and navigation bar -->
         <header>
             <img id="siteLogo" src="../../general_imgs/logo.png" alt="site logo" height="75" width="450"/>
-            <h1 id="mainTitle">ThingsIDo</h1>
-            <h2 id="subTitle">a personal portfolio of Oliver Stein</h2>
+            <hgroup id="titleGroup">
+                <h1 id="mainTitle">ThingsIDo</h1>
+                <h2 id="subTitle">a personal portfolio<br /> of Oliver Stein</h2>
+            </hgroup>
             <div id="navContainer">
                 <nav id="mainNavBar">
                     <ul class="hNavList">
@@ -29,23 +31,28 @@
                 </nav>
             </div>
         </header>
-        
-        <!-- Left quarter column, contains internal navigation for category -->
+
+        <!-- Right column, contains latest project in all categories -->
         <div class="column" id="leftColumn">
-            <section id="internalNavigation">
-                <h2>Photos</h2>
+            <section id="latestProjects">
+                <h2>Latest projects</h2>
                 <nav>
-                    <ul>
-                        <li><a href="../../photoalbums/fooGothenburg15/fooGothenburg15.html">Foo Fighters Gothenburg 2015</a></li>
-                        <li><a href="../../nyi.html">Australian wood lizard <i>(single)</i></a></li>
-                        <li><a href="../../nyi.html">Tasty salmon dish <i>(single)</i></a></li>
-                        <li><a href="../../nyi.html">My guitar with signatures <i>(single)</i></a></li>
-                        <li><a href="../../nyi.html">Schweiz 2014</a></li>
-                    </ul>
+                    <dl class="vNavList">
+                        <dt>Music</dt>
+                        <dd><a href="../../nyi.html">latest project</a></dd>
+                        <dt>Photos</dt>
+                        <dd><a href="fooGothenburg15.html">Foo Fighters Gothenburg 2015</a></dd>
+                        <dt>Paintings</dt>
+                        <dd><a href="../../paintings/inkEye/inkEye.html">Animal eye - ink</a></dd>
+                        <dt>Build projects</dt>
+                        <dd><a href="../../nyi.html">latest project</a></dd>
+                        <dt>Digital projects</dt>
+                        <dd><a href="../../nyi.html">latest project</a></dd>
+                    </dl>
                 </nav>
             </section>
         </div>
-        
+
         <!-- Mid half column, contains category information and gridlist of all projects -->
         <div class="column" id="midColumn">
             <h2>Foo Fighters Gothenburg 2015</h2>
@@ -61,42 +68,41 @@
             </p>
             <!-- I want the images in these gallerys to have a popup feature similar to facebooks image view, like an overlay on the current page.
             For the time beeing, clicking the images to open them in the browser instead demonstrates the gallery functionality close enough -->
-            <ul>  
-                <li><a href="foo01.jpg"><img src="foo01preview.jpg"
-                       alt="a view from the foo fighters concert in gothenburg 2015, taken from the audience"
-                       width="200" height="113"/></a></li> 
+            <ul class="hGalleryList">  
+                <li>
+                    <figure class="galleryItem">
+                        <a href="foo01.jpg">
+                            <img src="foo01preview.jpg"
+                                 alt="a view from the foo fighters concert in gothenburg 2015, taken from the audience"
+                                 width="200" height="113" />
+                        </a>
+                    </figure>
+                </li> 
                 
-                <li><a href="foo02.jpg"><img src="foo02preview.jpg"
-                       alt="a view from the foo fighters concert in gothenburg 2015, taken from the audience"
-                       width="200" height="113"/></a></li>
+                <li>
+                    <figure class="galleryItem">
+                        <a href="foo02.jpg">
+                            <img src="foo02preview.jpg"
+                                 alt="a view from the foo fighters concert in gothenburg 2015, taken from the audience"
+                                 width="200" height="113" />
+                        </a>
+                    </figure>
+                </li>
             
-                <li><a href="foo03.jpg"><img src="foo03preview.jpg"
-                       alt="a view from the foo fighters concert in gothenburg 2015, taken from the audience"
-                       width="200" height="113"/></a></li>
+                <li>
+                    <figure class="galleryItem">
+                        <a href="foo03.jpg">
+                            <img src="foo03preview.jpg"
+                                 alt="a view from the foo fighters concert in gothenburg 2015, taken from the audience"
+                                 width="200" height="113" />
+                        </a>
+                    </figure>
+                </li>
                 
             </ul>
         </div>
         
-        <!-- Right column, contains latest project in all categories -->
-        <div class="column" id="rightColumn">
-            <section id="latestProjects">
-                <h2>Latest projects</h2>
-                <nav>
-                    <dl id="LatestProjList">
-                        <dt>Music</dt>
-                        <dd><a href="../../nyi.html">latest project</a></dd>
-                        <dt>Photos</dt>
-                        <dd><a href="fooGothenburg15.html">Foo Fighters Gothenburg 2015</a></dd>
-                        <dt>Paintings</dt>
-                        <dd><a href="../../paintings/inkEye/inkEye.html">Animal eye - ink</a></dd>
-                        <dt>Build projects</dt>
-                        <dd><a href="../../nyi.html">latest project</a></dd>
-                        <dt>Digital projects</dt>
-                        <dd><a href="../../nyi.html">latest project</a></dd>
-                    </dl>
-                </nav>
-            </section>      
-        </div>
+       
     
         <!-- Page footer -->
         <footer>

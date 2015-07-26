@@ -12,8 +12,10 @@
         <!-- Page header with logo, title and navigation bar -->
         <header>
             <img id="siteLogo" src="general_imgs/logo.png" alt="site logo" height="75" width="450"/>
-            <h1 id="mainTitle">ThingsIDo</h1>
-            <h2 id="subTitle">a personal portfolio of Oliver Stein</h2>
+            <hgroup id="titleGroup">
+                <h1 id="mainTitle">ThingsIDo</h1>
+                <h2 id="subTitle">a personal portfolio<br /> of Oliver Stein</h2>
+            </hgroup>
             <div id="navContainer">
                 <nav id="mainNavBar">
                     <ul class="hNavList">
@@ -29,28 +31,12 @@
             </div>
         </header>
         
-        <!-- Left quarter column, contains internal navigation for category -->
-        <div class="column" id="leftColumn">
-            <section id="internalNavigation">
-                <h2>Category</h2>
-                <hr />
-                <nav>
-                    <ul class="vNavList">
-                        <li><a href="nyi.html">navigation item 1</a></li>
-                        <li><a href="nyi.html">navigation item 2</a></li>
-                        <li><a href="nyi.html">navigation item 3</a></li>
-                        <li><a href="nyi.html">navigation item 4</a></li>
-                        <li>etc...</li>
-                    </ul>
-                </nav>
-            </section>
-        </div>
+       
         
-        <!-- Right column, contains latest project in all categories -->
-        <div class="column" id="rightColumn">
+        <!-- Left column, contains latest project in all categories -->
+        <div class="column" id="leftColumn">
             <section id="latestProjects">
                 <h2>Latest projects</h2>
-                <hr />
                 <nav>
                     <dl class="vNavList">
                         <dt>Music</dt>
@@ -106,6 +92,7 @@
                  in, suscipit iaculis ipsum. Suspendisse mauris sem, efficitur id sapien ac, porttitor bibendum 
                 enim. Nam et magna odio.
             </p>
+            <a href="paintings/inkEye/inkEye.jpg"><img class="largeImage" src="paintings/inkEye/inkEyemarked.jpg" /></a>
             <p>
                 Nullam eu nulla dictum, tincidunt justo sit amet, posuere felis. Donec dignissim, justo eu
                  dignissim posuere, nibh tortor eleifend mauris, id posuere odio velit nec neque. Donec a 
@@ -117,6 +104,36 @@
                  sed nunc dui. Proin eget sodales tellus. In tellus lectus, facilisis ac tempor quis, auctor
                  non nibh. Suspendisse nec erat tortor. 
             </p>
+            <ul class="hGalleryList">
+                <li >
+                    <figure class="galleryItem">
+                        <a href="photoalbums/fooGothenburg15/foo01.jpg">
+                            <img src="photoalbums/fooGothenburg15/foo01preview.jpg"
+                                 alt="a view from the foo fighters concert in gothenburg 2015, taken from the audience"
+                                 width="200" height="113" />
+                        </a>
+                    </figure>
+                </li>
+
+                <li>
+                    <figure class="galleryItem">
+                        <a href="photoalbums/fooGothenburg15/foo02.jpg">
+                            <img src="photoalbums/fooGothenburg15/foo02preview.jpg"
+                                 alt="a view from the foo fighters concert in gothenburg 2015, taken from the audience"
+                                 width="200" height="113" />
+                        </a>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="galleryItem">
+                        <a href="photoalbums/fooGothenburg15/foo03.jpg">
+                            <img src="photoalbums/fooGothenburg15/foo03preview.jpg"
+                                 alt="a view from the foo fighters concert in gothenburg 2015, taken from the audience"
+                                 width="200" height="113" />
+                        </a>
+                    </figure>
+                </li>
+            </ul>
         </div>
         
     
