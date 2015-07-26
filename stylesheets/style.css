@@ -36,7 +36,8 @@ body{
   background-color: #c8c8c8;
 }
 p{
-  font-size: 0.875em;
+  font-size: 1em;
+  font-size: 1rem;
 }
 img {
     border: none;
@@ -102,7 +103,22 @@ ul.hGalleryList, ul.hNavList{
     border: solid 3px #5894f8;
     border: outset 3px #5894f8;
 }
+.vNavList {
+    font-style: italic;
+    margin: 2em;
+    font-weight: bold;
+    
+    
+}
+.vNavList li, dt{
 
+    width: 100%;
+    text-decoration: none;
+    border-bottom: dotted 2px #232323;
+}
+dt {
+    color: #5894f8;
+}
 
 h1{
   font-family: Italianno, cursive;
@@ -147,8 +163,7 @@ h2{
 }
 
 .aboutImage {
-    width: 500px;
-    margin: 2em;
+    width: auto;
     font-family: Verdana, Arial, sans-serif;
     color: #232323;
 }
@@ -183,40 +198,39 @@ h2{
 
 
 
-#leftColumn{
-  position: fixed;
-  max-width: 18%;
-  width: 30em;
-  background-color: #f4f4f4;
-  border: ridge 5px #c8c8c8;
-  margin: 2%;
-  font-size: 0.8em;
-  padding: 2em;
-  
 
+#latestProjects, #internalNavigation {
+    background-color: #f4f4f4;
+    border: solid 5px #c8c8c8;
+    width: auto;
+
+    font-size: 0.8em;
+    margin: 10%;
+    padding: 1em;
+    box-shadow: 0 0 5px #232323;
+    height: 20rem;
 }
-#leftColumn a, #leftColumn h2{
-  font-family: Verdana, sans-serif;
-  color: #232323;
+#rightColumn, #leftColumn{
   border: red 1px solid;
- }
-#rightColumn{
-  background-color: #f4f4f4;
-  border: ridge 5px #c8c8c8;
-  margin: 1em 1em;
-  font-size: 0.8em;
-  padding: 2em;
+  width: 23%;
+  height: 80%;
   position: fixed;
-  right: 1em;
+  top: 10em;
 }
-#rightColumn a, #rightColumn h2{
+#rightColumn {
+    right: 0;
+}
+#leftColumn {
+    left: 0;
+}
+#leftColumn a, #leftColumn h2, #rightColumn a, #rightColumn h2{
   font-family: Verdana, sans-serif;
   color: #232323;
-  border: red 1px solid;
  }
-.vNavList{
+
+#internalNavigation ul{
     list-style-type: square;
-    list-style-position: outside;
+    
 }
 
 
@@ -224,16 +238,17 @@ h2{
 #midColumn{
   height: 100%;
   width: 50%;
-  margin: 0 25%;
+  margin: 0 24%;
   background-color: #f4f4f4;
   padding: 3em 1em;
   box-shadow: 0 0 8px #232323;
   border-radius: 5px;
   min-width: 740px;
+  border: red 1px solid;
 }
 
 #contactMe {
-    clear: both;
+    clear: left;
 }
 
 #midColumn p, #midColumn h3{
@@ -256,11 +271,16 @@ h2{
 }
 
 .aboutImage {
-    float:right;
     margin: 0 3em 3em 1em;
     text-align: center;
 }
-#aboutSection {
+#me1, #me2 {
+    float: right;
+}
+#me3 {
+    float: left;
+}
+#aboutMe p{
     font-size: 1rem;
 }
 
