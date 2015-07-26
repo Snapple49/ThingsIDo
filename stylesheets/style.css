@@ -5,6 +5,7 @@
  * main colors: gray #232323, blue #98cafb
  * secondary accents: blue #5894f8, light gray #f9f9f9, darker gray #c8c8c8
  * */
+/* fonts */
 @font-face {
   font-family: 'Italianno';
   font-style: normal;
@@ -12,6 +13,9 @@
   src: local('Italianno'), local('Italianno-Regular'), url(http://fonts.gstatic.com/s/italianno/v6/RzzA8gdr3WCK_nxdg53KGltXRa8TVwTICgirnJhmVJw.woff2) format('woff2'),
         url(http://fonts.gstatic.com/s/italianno/v6/RzzA8gdr3WCK_nxdg53KGj8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
 }
+
+/* sitewide styles */
+
 html{
   font-size: 100%;
   top: 0;
@@ -45,19 +49,35 @@ hr {
 address {
     margin: 0 3em;
 }
+header{
+  background-color: #98cafb;
+  text-align: center;
+  box-shadow: 0 0 8px #232323;
+  height: auto;
+  /*padding: 0 25%;*/
+}
+footer {
+    background-color: #232323;
+    color: #f4f4f4;
+    box-shadow: 0 0 8px #232323;
+    padding: 1em 1em;
+    clear: both;
+}
+
 li{
-  display: inline-block;
+  display: inline;
 }
-ul.hGalleryList, ul.hNavList{
-  list-style: none;
-  padding: 0;
-  display: inline-block;
-}
+
 figure{
   margin: 1em;
   margin: 1rem;
   width: 200px;
 
+  display: inline-block;
+}
+ul.hGalleryList, ul.hNavList{
+  list-style: none;
+  padding: 0;
   display: inline-block;
 }
 
@@ -86,20 +106,6 @@ h1{
   color: #232323;
 }
 
-header{
-  background-color: #98cafb;
-  text-align: center;
-  box-shadow: 0 0 8px #232323;
-  height: auto;
-  /*padding: 0 25%;*/
-}
-footer {
-    background-color: #232323;
-    color: #f4f4f4;
-    box-shadow: 0 0 8px #232323;
-    padding: 1em 1em;
-    clear: both;
-}
 header nav{
   background-color: #232323;
   align-content: center;
@@ -165,15 +171,15 @@ h2{
 
 
 #leftColumn{
-    position: fixed;
-  max-width: 18%;
+  position: fixed;
+  
   width: auto;
   background-color: #f4f4f4;
   border: ridge 5px #c8c8c8;
-  margin: 4em 1em;
+  margin: 1em;
   font-size: 0.8em;
   padding: 2em;
-  float: left;
+  
 
 }
 #leftColumn a, #leftColumn h2{
@@ -182,15 +188,13 @@ h2{
   border: red 1px solid;
  }
 #rightColumn{
-  max-width: 18%;
-  width: 18%;
   background-color: #f4f4f4;
   border: ridge 5px #c8c8c8;
-  margin: 4em 1em;
+  margin: auto;
   font-size: 0.8em;
   padding: 2em;
-  float: right;
-
+  position: fixed;
+  right: 1em;
 }
 #rightColumn a, #rightColumn h2{
   font-family: Verdana, sans-serif;
@@ -205,7 +209,7 @@ h2{
 
 
 #midColumn{
-  position: relative;
+  align-self: center;
   height: 100%;
   margin: 2px auto;
   width: 50%;
@@ -244,27 +248,38 @@ h2{
     text-align: center;
 }
 
+
+/* table specific styling */
 table {
     font-size: 0.8em;
-    font-weight: normal;
-   
+    width: auto;
     border-collapse: collapse;
-    
+    margin: 1em auto;
+}
+tbody, tfoot {
+    font-family: Georgia, serif;
+}
+tfoot tr{
+    font-style: italic;
+    font-weight: bold;
 }
 td, th{
     border-left: #f4f4f4 solid 3px;
     border-right: #f4f4f4 solid 3px;
+    padding: 0.2em;
+    
 }
 thead th{
-    
-    border-top: solid 3px #c8c8c8;
     border-bottom: #232323 solid 3px;
     font-variant: small-caps;
 }
 tr.even td, tr.even th{
     background-color: #c8c8c8;
 }
-
-.dataSize{
+td.number {
     text-align: right;
 }
+tr:hover {
+    color: #5894f8;
+}
+/* end table specific */
