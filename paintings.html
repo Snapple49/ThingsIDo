@@ -13,10 +13,10 @@
         <!-- Page header with logo, title and navigation bar -->
         <header>
             <img id="siteLogo" src="general_imgs/logo.png" alt="site logo" height="75" width="450"/>
-            <hgroup id="titleGroup">
+            <div id="titleGroup">
                 <h1 id="mainTitle">ThingsIDo</h1>
                 <h2 id="subTitle">a personal portfolio<br /> of Oliver Stein</h2>
-            </hgroup>
+            </div>
             <div id="navContainer">
                 <nav id="mainNavBar">
                     <ul class="hNavList">
@@ -36,60 +36,105 @@
         <div class="column" id="midColumn">
             <section class="columnSection" id="latestProjectsSection">
                 <h2>Paintings and drawings</h2>
-                <div class="galleryRows" id="firstRow">
-                    <ul>
-                        <li><figure>
-                        <figcaption>Animal eye - ink</figcaption>
-                            <a href="paintings/inkEye/inkEye.html">
-                                <img src="paintings/inkEye/inkEyepreview.jpg"
-                                     alt="a drawing of an animal eye done in ink"
-                                     width="200" height="150"/></a>
-                        </figure></li>
-                        <li><figure>
-                        <figcaption>Tribal wolf pickguard project</figcaption>
-                            <a href="paintings/inkEye/inkEye.html">
-                                <img src="paintings/pickguardWOlf/pgWolfpreview.jpg"
-                                     alt="portrait of a wolf painted in acrylic on canvas"
-                                     width="200" height="113"/></a>
-                        </figure></li>
-                        <li><figure>
-                        <figcaption>Tiger face - colored pencils</figcaption>
-                            <a href="paintings/inkEye/inkEye.html">
-                                <img src="paintings/tigerPencils/tigerpreview.jpg"
-                                     alt="a tiger face drawn with colored pencils on black paper"
-                                     width="200" height="113"/></a>
-                        </figure></li>
-                    </ul>
-                </div>
                 
-                <div class="galleryRows" id="secondRow">
-                    <ul>
-                        <li></li>
-                        <li><figure>
-                        <figcaption>Howling wolf cliff - acrylic</figcaption>
-                            <a href="paintings/inkEye/inkEye.html">
-                                <img src="paintings/howlingWolf/howlingWolfpreview.jpg"
-                                     alt="a wolf howling on a cliff painted in acrylic on canvas"
-                                     width="200" height="150"/></a>
-                        </figure><figure>
-                        <figcaption>Wolf portrait - acrylic</figcaption>
-                            <a href="paintings/inkEye/inkEye.html">
-                                <img src="paintings/wolfPortrait/wolfPortraitpreview.jpg"
-                                     alt="portrait of a wolf painted in acrylic on canvas"
-                                     width="200" height="150"/></a>
-                        </figure></li>
-                        <li>item 6</li>
-                    </ul>
-                </div>
                 
-                <div class="galleryRows" id="thirdRow">
-                    <ul>
-                        <li>item 7</li>
-                        <li>item 8</li>
-                        <li>item 9</li>
+                
+                    <ul class="hGalleryList">
+                        <li>
+                            <figure class="galleryItem">
+                                <a href="paintings/inkEye/inkEye.html">
+                                    <img src="paintings/inkEye/inkEyepreview.jpg"
+                                         alt="a drawing of an animal eye done in ink"
+                                         width="200" height="150" />
+                                </a>
+                                <figcaption>Animal eye - ink</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="galleryItem">
+                                <a href="paintings/inkEye/inkEye.html">
+                                    <img src="paintings/pickguardWOlf/pgWolfpreview.jpg"
+                                         alt="portrait of a wolf painted in acrylic on canvas"
+                                         width="200" height="113" />
+                                </a>
+                                <figcaption>Tribal wolf pickguard project</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="galleryItem">
+                                <a href="paintings/inkEye/inkEye.html">
+                                    <img src="paintings/tigerPencils/tigerpreview.jpg"
+                                         alt="a tiger face drawn with colored pencils on black paper"
+                                         width="200" height="113" />
+                                </a>
+                                <figcaption>Tiger face - colored pencils</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="galleryItem">
+                                <a href="paintings/inkEye/inkEye.html">
+                                    <img src="paintings/howlingWolf/howlingWolfpreview.jpg"
+                                         alt="a wolf howling on a cliff painted in acrylic on canvas"
+                                         width="200" height="150" />
+                                </a>
+                                <figcaption>Howling wolf cliff - acrylic</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="galleryItem">
+                                <a href="paintings/inkEye/inkEye.html">
+                                    <img src="paintings/wolfPortrait/wolfPortraitpreview.jpg"
+                                         alt="portrait of a wolf painted in acrylic on canvas"
+                                         width="200" height="150" />
+                                </a>
+                                <figcaption>Wolf portrait - acrylic</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="galleryItem">
+
+                                <a href="projecttemplate.html">
+                                    <img src="general_imgs/placeholderItem.png"
+                                         alt="placeholder image, 200x150"
+                                         width="200" height="150" />
+                                </a>
+                                <figcaption>item 6</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="galleryItem">
+
+                                <a href="projecttemplate.html">
+                                    <img src="general_imgs/placeholderItem.png"
+                                         alt="placeholder image, 200x150"
+                                         width="200" height="150" />
+                                </a>
+                                <figcaption>item 7</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="galleryItem">
+
+                                <a href="projecttemplate.html">
+                                    <img src="general_imgs/placeholderItem.png"
+                                         alt="placeholder image, 200x150"
+                                         width="200" height="150" />
+                                </a>
+                                <figcaption>item 8</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="galleryItem">
+
+                                <a href="projecttemplate.html">
+                                    <img src="general_imgs/placeholderItem.png"
+                                         alt="placeholder image, 200x150"
+                                         width="200" height="150" />
+                                </a>
+                                <figcaption>item 9</figcaption>
+                            </figure>
+                        </li>
                     </ul>
-                </div>
-            
             </section>
         </div>
         
