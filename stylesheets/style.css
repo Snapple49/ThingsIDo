@@ -38,7 +38,7 @@ p{
 }
 img { /* scale images to a maximum width when image is wider than parent */
     border: none; 
-    max-width: 90%;
+    max-width: 100%;
     width:auto;
     height:auto;
 }
@@ -160,19 +160,18 @@ figcaption {
 
 /* ID SPECIFIC STYLES */
 
-#midColumn{
-    height: 100%;
-    width: 50%;
-    margin: 0 24%;
-    background-color: #f4f4f4;
-    padding: 3em 1em;
-    box-shadow: 0 0 8px #232323;
-    border-radius: 5px;
-    min-width: 740px;
-    min-height: 800px;
-}
+    #midColumn{
+        height: 100%;
+        width: 50%;
+        margin: 0 24%;
+        background-color: #f4f4f4;
+        padding: 3em 1em;
+        box-shadow: 0 0 8px #232323;
+        border-radius: 5px;
+    } 
+
 #titleGroup {
-    width: 40em;
+    width: 100%;
     text-align: center;
     margin: 0 auto 1em auto;
     line-height: 0.5em;
@@ -180,6 +179,7 @@ figcaption {
     background-image: linear-gradient(to left, rgba(35, 35, 35, 0.9) 30%, transparent);
     border-radius: 0 20px 60px 0;
     box-shadow: 6px -2px 5px #f4f4f4;
+	padding: 0.5em 0;
 }
 #mainTitle, #subTitle{
     
@@ -266,6 +266,39 @@ figcaption {
     width: 270px;
 }
 
+@media all and (max-width: 499px){
+	
+	nav{
+		height: 3.2em;
+		overflow: hidden;
+		padding: 0;
+	}
+	nav:hover{
+		height: auto;
+		margin: 0;
+	}
+	.hNavList li{
+		display: block;
+	}
+	body{
+		background: #f9f9f9;
+	}
+	#midColumn{
+        height: 100%;
+        width: 90%;
+        margin: 0 auto;
+        background-color: #f4f4f4;
+        padding: 0 1em;
+        border-radius: 5px;
+		
+    }
+	#subTitle{
+	  display: none;
+	}
+	#leftColumn{
+	  display: none;
+	}
+}
 /* table and form specific styling */
 
 table {
