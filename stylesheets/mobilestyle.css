@@ -1,0 +1,299 @@
+/* font from Google: http://fonts.googleapis.com/css?family=Italianno */
+/* font: style weight variant !size/line-height !font-family */
+
+/* colors
+ * main colors: gray #232323, blue #98cafb
+ * secondary accents: blue #5894f8, light gray #f9f9f9, darker gray #c8c8c8
+ * */
+/* fonts and general setup */
+@font-face {
+	font-family: 'Italianno';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Italianno'), local('Italianno-Regular'), url(http://fonts.gstatic.com/s/italianno/v6/RzzA8gdr3WCK_nxdg53KGltXRa8TVwTICgirnJhmVJw.woff2) format('woff2'),
+	      url(http://fonts.gstatic.com/s/italianno/v6/RzzA8gdr3WCK_nxdg53KGj8E0i7KZn-EPnyo3HZu7kw.woff) format('woff'),
+	      url(fonts/italiano/Italianno-Regular-OTF.otf) format('OTF');
+}
+html{
+	font-size: 100%;
+	top: 0;
+	left: 0; 
+}
+body{
+	font-family: Verdana, sans-serif;
+	color: #232323;
+	margin: 0 0;
+	height:auto;
+	background-color: #c8c8c8; 
+}
+
+/* GENERAL ELEMENT STYLES */
+
+p{
+	font-size: 1em;
+}
+img { /* scale images to a maximum width when image is wider than parent */
+    border: none; 
+    max-width: 100%;
+    width:auto;
+    height:auto;
+}
+header{
+    background-color: #98cafb;
+    text-align: center;
+    box-shadow: 0 0 8px #232323;
+    height: auto;
+}
+footer {
+    background-color: #232323;
+    color: #f4f4f4;
+    box-shadow: 0 0 8px #232323;
+    padding: 1em 1em;
+    clear: both;
+}
+h2{
+    color: #5894f8;
+    font: normal 2em "Segoe Script", cursive;
+}
+header nav{
+    background-color: #232323;
+    margin: 0 25%;
+    font-variant: small-caps;
+}
+header a:hover {
+    background-color: rgba(200, 200, 200, 0.4);
+}
+header li, header a{
+    color: #5894f8;
+    text-decoration: none;
+    margin: 0.2em;
+    font-size: 1.1em;
+}
+dt {
+    color: #5894f8;
+}
+dd {
+    text-indent: -1em;
+}
+hr {
+    margin: 2em;
+    color: #232323;
+}
+address {
+    margin: 0 3em;
+}
+figcaption {
+    margin-top: 0.5em;
+}
+
+/* CLASS SPECIFIC STYLES */
+
+.galleryItem figcaption {
+    font-style: italic;
+    font-weight: bold;
+    color: #5894f8;
+}
+.hGalleryList li{
+    display: inline;
+}
+.hNavList li{
+    display:;
+}
+
+nav{
+    height: 3.2em;
+	overflow: hidden;
+	padding: 0;
+}
+nav:hover{
+    height: auto;
+    margin: 0;
+}
+.hGalleryList, .hNavList{
+    list-style: none;
+    padding: 0; 
+    display: inline-block;
+}
+
+.hGalleryList {
+    text-align: center;
+    max-width: 900px;
+    margin: 2em;
+}
+.galleryItem {
+    display: inline-block;
+    background-color: #c8c8c8;
+    width: 220px;
+    height: 200px;
+    padding: 0.4em;
+    box-shadow: 3px 3px 4px #666666;
+    border-radius: 5px;
+    margin: 1em;
+    vertical-align: top;
+}
+.galleryItem img{
+    border: solid 3px #5894f8;
+    border: outset 3px #5894f8;
+}
+.vNavList {
+    font-style: italic;
+    margin: 2em;
+    font-weight: bold;
+}
+.aboutImage {
+    font-family: Verdana, Arial, sans-serif;
+    color: #232323;
+    margin: 0 3em 3em 1em;
+    text-align: center;
+}
+.largeImage {
+    display: block;
+    text-align: center;
+    margin: 1em auto;
+    max-width: 90%;
+    width:auto;
+    height:auto;
+    padding-top: 1em;
+}
+.selected {
+    font-weight:bolder;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+/* ID SPECIFIC STYLES */
+
+#midColumn{
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    padding: 3em 1em;
+    box-shadow: 0 0 8px #232323;
+    border-radius: 5px;
+    min-height: 800px;
+}
+#midColumn figure{
+    max-width: 80%;
+}
+#titleGroup {
+    width: 40em;
+    text-align: center;
+    margin: 0 auto 1em auto;
+    line-height: 0.5em;
+    border-bottom: solid 3px #232323;
+    background-image: linear-gradient(to left, rgba(35, 35, 35, 0.9) 30%, transparent);
+    border-radius: 0 20px 60px 0;
+    box-shadow: 6px -2px 5px #f4f4f4;
+}
+#mainTitle, #subTitle{
+    
+    display: inline-block;
+    margin: 0.3em 1em;
+    text-align: center;
+}
+#mainTitle {
+    font-family: Italianno, cursive;
+    font-size: 3em;
+    color: #232323;
+}
+#subTitle {
+    font-size: 1.4em;
+    line-height: 1em;
+    margin-top: 1em;
+}
+#siteLogo {
+    position:absolute;
+    left: 0;
+    top: 0;
+    max-width: 25%;
+    width: auto;
+    height: auto;
+}
+#bigWrapper{
+    width: 100%;
+}
+#latestProjects{
+    background-color: #f4f4f4;
+    border: solid 5px #c8c8c8;
+    width: auto;
+    font-size: 0.8em;
+    margin: 10%;
+    padding: 1em;
+    box-shadow: 0 0 5px #232323;
+    height: 20rem;
+}
+#leftColumn{
+    display: none;
+}
+#midColumn p, #midColumn h3{
+    margin: 1em 3rem;
+    
+}
+#midColumn img, #midColumn h2{
+    text-align: center;
+}
+#navContainer {
+    clear: both;
+    background-color: #232323;
+}
+#footerContent {
+    margin: 0 25%;
+    text-align: center;
+    font-variant: small-caps;
+    height: 2em;
+}
+#disclaimer {
+    clear: left;
+    font-size: smaller;
+}
+#disclaimer strong {
+    font-style: italic;
+    color: orangered;
+}
+#me1, #me2 {
+    float: right;
+    width: 500px;
+}
+#me3 {
+    float: left;
+    width: 270px;
+}
+
+/* table and form specific styling */
+
+table {
+    font-size: 0.8em;
+    width: auto;
+    border-collapse: collapse;
+    margin: 1em auto;
+}
+tbody, tfoot {
+    font-family: Georgia, serif;
+}
+tfoot tr{
+    font-style: italic;
+    font-weight: bold;
+}
+td, th{
+    border-left: #f4f4f4 solid 3px;
+    border-right: #f4f4f4 solid 3px;
+    padding: 0.2em;
+}
+thead th{
+    border-bottom: #232323 solid 3px;
+    font-variant: small-caps;
+}
+tr.even td, tr.even th{
+    background-color: #c8c8c8;
+}
+td.number {
+    text-align: right;
+}
+tr:hover {
+    color: #5894f8;
+}
+form {
+    margin: 2em;
+}
+/* end table specific */

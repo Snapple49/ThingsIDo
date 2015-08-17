@@ -1,0 +1,256 @@
+/* font from Google: http://fonts.googleapis.com/css?family=Italianno */
+/* font: style weight variant !size/line-height !font-family */
+
+/* colors
+ * main colors: gray #232323, blue #98cafb
+ * secondary accents: blue #5894f8, light gray #f9f9f9, darker gray #c8c8c8
+ * */
+
+/* fonts and general setup */
+@font-face {
+  font-family: 'Italianno';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Italianno'), local('Italianno-Regular'), url(http://fonts.gstatic.com/s/italianno/v6/RzzA8gdr3WCK_nxdg53KGltXRa8TVwTICgirnJhmVJw.woff2) format('woff2'),
+        url(http://fonts.gstatic.com/s/italianno/v6/RzzA8gdr3WCK_nxdg53KGj8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+html{
+  font-size: 100%;
+  top: 0;
+  left: 0; 
+}
+body{
+  font-family: Georgia, serif;
+  color: black;
+  margin: 0 0;
+  height:auto;
+  background-color: #fff; 
+}
+
+/* GENERAL ELEMENT STYLES */
+
+p{
+  font-size: 1em;
+}
+img { /* scale images to a maximum width when image is wider than parent */
+    border: none; 
+    max-width: 100%;
+    width:auto;
+    height:auto;
+}
+header{
+    text-align: center;
+    height: auto;
+    page-break-after: avoid;
+}
+footer {
+    padding: 1em 1em;
+    clear: both;
+}
+h2{
+    font: normal 2em "Segoe Script", cursive;
+}
+header nav{
+    display: none;
+}
+hr {
+    page-break-before: always;
+    margin: 2em;
+}
+address {
+    margin: 0 3em;
+}
+figcaption {
+    margin-top: 0.5em;
+}
+
+/* CLASS SPECIFIC STYLES */
+
+.galleryItem figcaption {
+    font-style: italic;
+    font-weight: bold;
+    color: #5894f8;
+}
+.hNavList li, .hGalleryList li{
+    display: inline;
+}
+
+.hGalleryList, .hNavList{
+    list-style: none;
+    padding: 0; 
+    display: inline-block;
+}
+
+.hGalleryList {
+    text-align: center;
+    max-width: 900px;
+    margin: 2em;
+}
+.galleryItem {
+    display: inline-block;
+    background-color: #c8c8c8;
+    width: 25%;
+    height: 25%;
+    padding: 0.4em;
+    box-shadow: 3pt 3pt 4pt #666666;
+    border-radius: 5px;
+    margin: 1em;
+    vertical-align: top;
+    page-break-inside: avoid;
+}
+.galleryItem img{
+    border: outset 3px #5894f8;
+
+}
+.vNavList {
+    font-style: italic;
+    margin: 2em;
+    font-weight: bold;
+}
+.vNavList li, dt{
+    width: 100%;
+    text-decoration: none;
+    border-bottom: dotted 2px #232323;
+}
+.aboutImage {
+    font-family: Verdana, Arial, sans-serif;
+    color: #232323;
+    margin: 0 3em 3em 1em;
+    text-align: center;
+    width: 40%;
+    page-break-inside: avoid;
+
+}
+.largeImage {
+    display: block;
+    text-align: center;
+    margin: 1em auto;
+    max-width: 90%;
+    width:auto;
+    height:auto;
+    padding-top: 1em;
+}
+.selected {
+    font-weight:bolder;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+/* ID SPECIFIC STYLES */
+
+#midColumn{
+    padding: 1em 1em;
+}
+#titleGroup {
+    float: right;
+    display: block;
+    height: 4em;
+    width: 100%;
+    text-align: center;
+    margin: 1em; auto 0 auto;
+    line-height: 0.5em;
+    border-bottom: solid 3px #232323;
+    border-radius: 0 20px 60px 0;
+    box-shadow: 6px -2px 5px #f4f4f4;
+}
+#mainTitle, #subTitle{
+    
+    display: inline-block;
+    margin: 0.7em 1em;
+    text-align: center;
+}
+#mainTitle {
+    font-family: Italianno, cursive;
+    font-size: 3em;
+    color: #232323;
+}
+#subTitle {
+    display: none;
+}
+#siteLogo {
+    position: absolute;
+    top: 1em;
+    left: 2em;
+    max-width: 30%;
+}
+#bigWrapper{
+    width: 100%;
+}
+
+#leftColumn{
+    display: none;
+}
+#midColumn p, #midColumn h3{
+    margin: 1em 3rem;
+    
+}
+#midColumn img, #midColumn h2{
+    text-align: center;
+}
+#navContainer {
+    clear: both;
+    background-color: #232323;
+}
+#footerContent {
+    margin: 0 25%;
+    text-align: center;
+    font-variant: small-caps;
+    height: 2em;
+}
+#disclaimer {
+    clear: left;
+    font-size: smaller;
+}
+#disclaimer strong {
+    font-style: italic;
+    color: orangered;
+}
+#me1, #me2 {
+    float: right;
+    clear: right;
+}
+
+#me3 {
+    float: left;
+}
+#contactMe{
+    clear: right;
+}
+
+/* table and form specific styling */
+
+table {
+    font-size: 0.8em;
+    width: auto;
+    border-collapse: collapse;
+    margin: 1em auto;
+}
+tbody, tfoot {
+    font-family: Georgia, serif;
+}
+tfoot tr{
+    font-style: italic;
+    font-weight: bold;
+}
+td, th{
+    border-left: #f4f4f4 solid 3px;
+    border-right: #f4f4f4 solid 3px;
+    padding: 0.2em;
+}
+thead th{
+    border-bottom: #232323 solid 3px;
+    font-variant: small-caps;
+}
+tr.even td, tr.even th{
+    background-color: #c8c8c8;
+}
+td.number {
+    text-align: right;
+}
+tr:hover {
+    color: #5894f8;
+}
+form {
+    margin: 2em;
+}
+/* end table specific */
