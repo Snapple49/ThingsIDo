@@ -11,7 +11,8 @@
   font-style: normal;
   font-weight: 400;
   src: local('Italianno'), local('Italianno-Regular'), url(http://fonts.gstatic.com/s/italianno/v6/RzzA8gdr3WCK_nxdg53KGltXRa8TVwTICgirnJhmVJw.woff2) format('woff2'),
-        url(http://fonts.gstatic.com/s/italianno/v6/RzzA8gdr3WCK_nxdg53KGj8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+        url(http://fonts.gstatic.com/s/italianno/v6/RzzA8gdr3WCK_nxdg53KGj8E0i7KZn-EPnyo3HZu7kw.woff) format('woff'),
+        url(fonts/italianno/Italianno-Regular-OTF.otf) format('opentype');
 }
 html{
   font-size: 100%;
@@ -21,7 +22,8 @@ html{
 body{
   font-family: Verdana, sans-serif;
   color: #232323;
-  margin: 0 0;
+  margin: 0;
+  padding: 0;
   height:auto;
   background: 
                 linear-gradient(to right, rgba(249, 249, 249, 0) 10%, rgba(249, 249, 249, 1), rgba(249, 249, 249, 0) 90%),
@@ -54,6 +56,7 @@ footer {
     box-shadow: 0 0 8px #232323;
     padding: 1em 1em;
     clear: both;
+	height: auto;
 }
 h2{
     color: #3251AD;
@@ -223,6 +226,7 @@ figcaption {
     padding: 1em;
     box-shadow: 0 0 5px #232323;
     height: 20rem;
+    overflow: scroll;
 }
 #leftColumn{
     width: 24%;
@@ -253,7 +257,7 @@ figcaption {
     margin: 0 25%;
     text-align: center;
     font-variant: small-caps;
-    height: 2em;
+    height: auto;
 }
 #disclaimer {
     clear: left;
@@ -272,20 +276,29 @@ figcaption {
     width: 270px;
 }
 
-@media all and (max-width: 499px){
-	
-	nav{
-		height: 3.2em;
-		overflow: hidden;
-		padding: 0;
-	}
-	nav:hover{
-		height: auto;
-		margin: 0;
-	}
-	.hNavList li{
+@media all and (max-width: 480px){
+    #mainNavBar, .hNavList{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+	.hNavList a{
 		display: block;
+        text-align: center;
+        background-color: #252525;
+        background-image: linear-gradient(to bottom, rgba(249, 249, 249, 0.2), transparent);
+        border-radius: 5px;
+		margin: 0.2em 0.2em;
+		padding: .1em 1em;
+    }
+	.hNavList a:active{
+		background-image: linear-gradient(to top, rgba(249, 249, 249, 0.2), transparent);
 	}
+    .hNavList, .hNavList li {
+        margin: 0;
+        padding: 0;
+    }
 	body{
 		background: #f9f9f9;
 	}
@@ -294,15 +307,30 @@ figcaption {
         width: 90%;
         margin: 0 auto;
         background-color: #f4f4f4;
-        padding: 0 1em;
+        padding: 0;
         border-radius: 5px;
 		
+		
     }
+	#midColumn p{
+		margin: 0 1em;
+	}
 	#subTitle{
 	  display: none;
 	}
 	#leftColumn{
 	  display: none;
+	}
+	.galleryItem, .galleryItem *{
+		max-width: 75%;
+		max-height: auto;
+		margin: 0;
+	}
+	.aboutImage{
+		max-width: 100%;
+		float: none;
+		margin: 1em auto;
+		border: red solid 1px;
 	}
 }
 /* table and form specific styling */
