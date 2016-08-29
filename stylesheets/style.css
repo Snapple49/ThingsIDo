@@ -30,7 +30,7 @@ body{
                 /*linear-gradient(to top, rgba(220, 220, 220, 0.7) 5%, rgba(220, 220, 220, 0), rgba(220, 220, 220, 0.7) 95%) fixed,*/ /* Vertical gradient, uncomment to use */
                 url(../general_imgs/backgrounds/bg1.jpg) no-repeat fixed,
                 url(../general_imgs/backgrounds/bg2.jpg) no-repeat fixed right;
-  background-color: #c8c8c8; 
+  background-color: #c8c8c8;
 }
 
 /* GENERAL ELEMENT STYLES */
@@ -194,12 +194,13 @@ figcaption {
     display: inline-block;
     margin: 0.3em 1em;
     text-align: center;
+	padding: auto;
 }
 #mainTitle {
     font-family: Italianno, cursive;
     font-size: 3em;
     color: #232323;
-	margin-right: 7em;
+	margin-right: 4em;
 }
 #subTitle {
     font-size: 1.4em;
@@ -301,8 +302,9 @@ figcaption {
         padding: 0;
     }
 	body{
-		background: #f9f9f9;
+		background: #c8c8c8;
 	}
+	
 	#midColumn{
         height: 100%;
         width: 90%;
@@ -331,15 +333,22 @@ figcaption {
 	  margin: 1em auto;
 	}
 	.galleryItem, .galleryItem *{
-		max-width: 75%;
+		/*max-width: 60%;*/
 		max-height: auto;
-		margin: 0;
+		text-align: top;
+		/*margin: 0;*/
+	}
+	.galleryItem{
+		max-width: 70%;
+		margin: 0.5em auto;
 	}
 	.aboutImage{
 		/*max-width: 100%;*/
 		float: none;
 		margin: 1em auto;
-		border: red solid 1px;
+	}
+	p{
+		margin: 0 2em;
 	}
 }
 /* table and form specific styling */
