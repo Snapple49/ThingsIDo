@@ -168,18 +168,18 @@ figcaption {
 
 /* ID SPECIFIC STYLES */
 
-    #midColumn{
-        height: 100%;
-        width: 50%;
-        margin: 0 24%;
-        background-color: #f4f4f4;
-        padding: 3em 1em;
-        box-shadow: 0 0 8px #232323;
-        border-radius: 5px;
-    } 
+#midColumn{
+	height: 100%;
+	width: 50%;
+	margin: 0 24%;
+	background-color: #f4f4f4;
+	padding: 3em 1em;
+	box-shadow: 0 0 8px #232323;
+	border-radius: 5px;
+} 
 
 #titleGroup {
-    width: 100%;
+    width: 52%;
     text-align: center;
     margin: 0 auto 1em auto;
     line-height: 0.5em;
@@ -199,6 +199,7 @@ figcaption {
     font-family: Italianno, cursive;
     font-size: 3em;
     color: #232323;
+	margin-right: 7em;
 }
 #subTitle {
     font-size: 1.4em;
@@ -321,13 +322,21 @@ figcaption {
 	#leftColumn{
 	  display: none;
 	}
+	#titleGroup{
+	  width: 100%;
+	      background-image: linear-gradient(to left, rgba(35, 35, 35, 0.9) 5%, transparent);
+
+	}
+	#mainTitle{
+	  margin: 1em auto;
+	}
 	.galleryItem, .galleryItem *{
 		max-width: 75%;
 		max-height: auto;
 		margin: 0;
 	}
 	.aboutImage{
-		max-width: 100%;
+		/*max-width: 100%;*/
 		float: none;
 		margin: 1em auto;
 		border: red solid 1px;
