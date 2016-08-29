@@ -59,7 +59,7 @@ footer {
 	height: auto;
 }
 h2{
-    color: #3251AD;
+    color: #20336C; /*3251AD*/
     font: normal 2em "Segoe Script", cursive;
 }
 header nav{
@@ -129,7 +129,7 @@ figcaption {
     vertical-align: top;
     font-style: italic;
     font-weight: bold;
-    color: #3251AD;
+    color: #20336C;
 }
 .galleryItem img{
     border: solid 3px #3251AD;
