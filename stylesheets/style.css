@@ -27,7 +27,6 @@ body{
   height:auto;
   background: 
                 linear-gradient(to right, rgba(249, 249, 249, 0) 10%, rgba(249, 249, 249, 1), rgba(249, 249, 249, 0) 90%),
-                /*linear-gradient(to top, rgba(220, 220, 220, 0.7) 5%, rgba(220, 220, 220, 0), rgba(220, 220, 220, 0.7) 95%) fixed,*/ /* Vertical gradient, uncomment to use */
                 url(../general_imgs/backgrounds/bg1.jpg) no-repeat fixed,
                 url(../general_imgs/backgrounds/bg2.jpg) no-repeat fixed right;
   background-color: #c8c8c8;
@@ -279,11 +278,14 @@ figcaption {
 }
 
 @media all and (max-width: 480px){
-    #mainNavBar, .hNavList{
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
+	body *{
+		float: none;
+	}
+	#mainNavBar, .hNavList{
+			width: 100%;
+			margin: 0;
+			padding: 0;
+	}
 
 	.hNavList a{
 		display: block;
@@ -306,17 +308,26 @@ figcaption {
 	}
 	
 	#midColumn{
-        height: 100%;
-        width: 90%;
-        margin: 0 auto;
-        background-color: #f4f4f4;
-        padding: 0;
-        border-radius: 5px;
-		
-		
-    }
+		height: 100%;
+		width: 90%;
+		margin: 0 auto;
+		background-color: #f4f4f4;
+		padding: 0;
+		border-radius: 5px;
+		padding-bottom: 2em;
+		text-align: center;
+  }
 	#midColumn p{
-		margin: 0 1em;
+		margin: 2em 1em;
+		text-align: left;
+		
+	}
+	address{
+		margin: 2em auto;
+		text-align: center;
+	}
+	#disclaimer{
+		padding: 0 1em;
 	}
 	#subTitle{
 	  display: none;
@@ -332,27 +343,26 @@ figcaption {
 	#mainTitle{
 	  margin: 1em auto;
 	}
-	.galleryItem, .galleryItem *{
-		/*max-width: 60%;*/
-		max-height: auto;
-		text-align: top;
-		/*margin: 0;*/
-	}
+	
 	.galleryItem{
 		max-width: 70%;
-		margin: 0.5em auto;
-	}
-	.aboutImage{
-		/*max-width: 100%;*/
-		float: none;
 		margin: 1em auto;
 	}
-	p{
-		margin: 0 2em;
+	.aboutImage{
+		max-width: 90%;
+		margin: 1em 5%; 
+		display: block;
 	}
+	.aboutImage img{
+		width: 100%;
+	}
+	#me3{
+		width: 60%;
+		margin: 1em 20%;
+	}
+	
 }
 /* table and form specific styling */
-
 table {
     font-size: 0.8em;
     width: auto;
